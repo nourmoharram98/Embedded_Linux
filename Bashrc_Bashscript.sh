@@ -3,8 +3,8 @@
 # Check if .bashrc file exists (-f) flag used to search for file in home directory
 if [ -f "$HOME/.bashrc" ]; then
     # Append new environment variables to .bashrc and (>>) used to concate the new variables and (\)  is used to escape the effect of dollar sign
-    echo "export HELLO=\$HOSTNAME" >> "$HOME/.bashrc"
-    echo "LOCAL=\$(whoami)" >> "$HOME/.bashrc"
+    echo "export HELLO=$HOSTNAME" >> "$HOME/.bashrc"
+    echo "LOCAL=$(whoami)" >> "$HOME/.bashrc"
     
     # source used to run the bashrc file
     source "$HOME/.bashrc"
