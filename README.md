@@ -2,4 +2,4 @@
 
 ## Bash script to create new user and new group and add the new user to the group
 
-### check if the username and grouname is already created or not
+### check if the user name and grouname is already created or not
