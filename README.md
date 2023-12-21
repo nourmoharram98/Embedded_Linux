@@ -4,56 +4,32 @@
 
 ### By Eng. Nour Alaa-Eldin Hanafy Moharram
 
-## Task1: 
+## Task2: 
 
-Create Calculator Library and application for it using :
+Create cross compiler for avr using crosstool-ng :
 
-* ### Static Library
+Commands to run the crosstool-ng:
 
-1. First: create the .c files required for the math operations Library and save them in directory Li
+* git clone the repository of crosstool-ng:
+  * git clone https://github.com/crosstool-ng/crosstool-ng
+  * cd crosstool-ng
+  * git checkout 25f6dae8
+* run command below to install all essential dependencies for cross tool: 
+  * sudo apt install build-essential git autoconf bison flex texinfo help2man gawk \
+    libtool-bin libncurses5-dev unzip
+* run ./bootstrap
+* run ./configure --enable-local
+* run make
+* run ./ct-ng list-samples
+* run ./ct-ng avr
+* run ./ct-ng menuconfig and apply this changes:
+  * ```
+    ───────────────────── Paths and misc options ─────────────────────
+    [*] Debug crosstool-NG
+    [ ]   Pause between every steps
+    [*]   Save intermediate steps
+    [*]     gzip saved states
+    [*]   Interactive shell on failed commands
+    ```
 
-2. second: compile the .c files to generate the object files required for library using command below:
-
-   * ###### gcc -c *.c
-
-3. third: create the static library called mathOperations using command below:
-
-   * ###### ar -rcs libmathOperations.a *.o
-
-4. fourth: create the header files for the created operations and save them in directory Include
-
-5. fifth: link the static library with the main.c file after compiling it with the command below:
-
-   * ###### gcc main.c -L ./Lib -lmathOperations -o operations -static
-
-* ### Dynamic Library
-
-1. First: create the .c files required for the math operations Library and save them in directory Li
-
-2. second: compile the .c files to generate the object files required for library using command below:
-
-   * ###### gcc -c *.c
-
-3. third: create the dynamic library called mathOperations using command below:
-
-   * gcc --shared -fPIC libmathOperations.so *.o
-
-4. ###### fourth: copy the dynamic library to the /usr/lib in root system in order to be linked to program by system loader in runtime
-
-   * sudo cp ./Lib/lib*.so /usr/lib
-
-   * sudo chmod 0755 /usr/lib/lib*.so
-
-   * ###### sudo ldconfig (to update the cash file in /etc/ld.so.cache)
-
-5. fifth: compile the main.c and link it to the dynamic library using command below
-
-   * ###### gcc main.c -L ./Lib -lmathOperations -o operations -I ./Include
-
-* ### Comparison between two libraries
-
-​	1- use ldd command to test .elf files if it is statically linked or dynamically linked
-
-​	2- use file command to test the libraries if it static or dynamic
-
-​	3- use the objdump -T and -x to display the symbol table for each executable
+* run ./ct-ng build
