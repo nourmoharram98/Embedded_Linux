@@ -33,3 +33,7 @@ Commands to run the crosstool-ng:
     ```
 
 * run ./ct-ng build
+
+* ![](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/avr-gcc-cross-compiler.png)
+
+![](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/x-tools.png)
