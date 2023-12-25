@@ -40,3 +40,7 @@ Commands to run the crosstool-ng:
     ```
 
 * run ./ct-ng build
+
+* ![avr-gcc-cross-compiler](README.assets/avr-gcc-cross-compiler-1703494044458-3.png)
+
+* ![x-tools](README.assets/x-tools-1703494091155-5.png)
