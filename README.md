@@ -14,14 +14,21 @@ Commands to run the crosstool-ng:
   * git clone https://github.com/crosstool-ng/crosstool-ng
   * cd crosstool-ng
   * git checkout 25f6dae8
+  
 * run command below to install all essential dependencies for cross tool: 
   * sudo apt install build-essential git autoconf bison flex texinfo help2man gawk \
     libtool-bin libncurses5-dev unzip
+  
 * run ./bootstrap
+
 * run ./configure --enable-local
+
 * run make
+
 * run ./ct-ng list-samples
+
 * run ./ct-ng avr
+
 * run ./ct-ng menuconfig and apply this changes:
   * ```
     ───────────────────── Paths and misc options ─────────────────────
@@ -33,7 +40,3 @@ Commands to run the crosstool-ng:
     ```
 
 * run ./ct-ng build
-
-* [AVR_GCC_CROSSCompiler](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/avr-gcc-cross-compiler.png)
-
-* [X_tools](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/x-tools.png)
