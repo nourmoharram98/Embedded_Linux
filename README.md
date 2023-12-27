@@ -24,7 +24,7 @@ LED Indicator: Illuminate upon the timer reaching zero to signal the activation 
 
 3. append the main.c and application files to the main direcotry along side with the Standard types file
 
-4.  create four global variables in .bashrc file that will hold the path to the avr-gcc , avr-ar , avr-objdump and avr-objcopy 
+4. create four global variables in .bashrc file that will hold the path to the avr-gcc , avr-ar , avr-objdump and avr-objcopy 
 
    ```bash
    cd ~ 
@@ -67,3 +67,9 @@ LED Indicator: Illuminate upon the timer reaching zero to signal the activation 
    ```
 
 10. flash the "program.elf" file or "program.hex" file on "proteus" or using usbasp on target.
+
+
+
+### Simulation for Project on Proteus
+
+<video src="simulation_proteus.mkv" />
