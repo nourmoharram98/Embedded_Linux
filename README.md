@@ -72,4 +72,4 @@ LED Indicator: Illuminate upon the timer reaching zero to signal the activation 
 
 ### Simulation for Project on Proteus
 
-<video src="simulation_proteus.mkv" />
+<video src="simulation_proteus.mp4" />
