@@ -30,7 +30,7 @@ sudo apt-get install tftpd-hpa
 #Change the configuration of tftp
 vim /etc/default/tftpd-hpa
 #write inside the file
-tftf_option = “--secure –-create”
+tftp_option = “--secure –-create”
 #Restart the protocal
 Systemctl restart tftpd-hpa
 #Make sure the tftp protocol is running
