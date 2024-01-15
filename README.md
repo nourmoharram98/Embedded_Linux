@@ -50,7 +50,7 @@ Create a virtual TFTP Interface for QEMU
 ip addr 
 ```
 
-![ip_address](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/ip_address.png)
+[ip_address](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/ip_address.png)
 
 from the Image above we can get the ip address for the host machine which is in our case in wlp2s0 at inet section:
 
@@ -122,4 +122,4 @@ Run the QEMU emulation tool to test the u-boot using tftp communication
 sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic -kernel u-boot -sd sd.img -net tap,script=./qemu-ifup -net nic 
 ```
 
-![RESULT](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/RESULT.png)
+[RESULT](/home/nourmoharram/GIT_REPO/Embedded_Linux/README.assets/RESULT.png)
