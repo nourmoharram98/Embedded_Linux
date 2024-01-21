@@ -6,7 +6,7 @@
 
 
 
-## Embedded Linux Task 8:
+## Embedded Linux Task 9:
 
 ## Create zImage for Kernel and transfer it along with target.dtb file over TFTP server
 
