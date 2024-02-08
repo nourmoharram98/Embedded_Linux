@@ -155,7 +155,7 @@ saveenv
 * run the QEMU environment to start running the kernel
 
 ```bash
-qemu-system-arm -M vexpress-a9 -m 128M -nographic -kernel path/u-boot -sd path/sd.img
+qemu-system-arm -M vexpress-a9 -m 128M --nographic -kernel path/u-boot -sd path/sd.img
 ```
 
 ![5](README.assets/bootupstatic.png)
@@ -183,3 +183,14 @@ sudo rsync -av * /home/nourmoharram/rootfs/dynamicRootfs
 ```
 
 * clear the rootfs parition of the sd image and then copy the content of the dynamicRootfs to the rootfs parition (ext4)
+
+
+
+## Notes related to BusyBox :
+
+* In static compiled BusyBox binaries all the created binaries are symbolic link to the executable busy box and they not consume any space in memory while the busybox only consume memory (large memory)
+* why statically busy box is having large size ?
+  * because it has all the implemented binaries inside it in addition to any required static libraries from the cross tool chain since the binaries are compiled by this tool chain. 
+  * without the busybox if we created the binaries stand alone for each one so every binary would have its needed static libraries linked with it and this will cause high memory consumption in ram
+* In dynamic compiled busybox the binaries are also symbolic link to the busybox binary but it is not linked with any needed library from the tool chain libraries since they will be copied to the ram in a specific memory location to be located in run time by system loader (ld.so)
+  * this approach will save alot of memory in ram since the binaries will consume one space and  the libraries needed will be loaded in run time to specific memory space in ram when their relative binaries are called or used 
