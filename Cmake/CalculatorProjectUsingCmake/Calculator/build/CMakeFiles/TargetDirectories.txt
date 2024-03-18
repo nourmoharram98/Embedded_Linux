@@ -1,0 +1,4 @@
+/home/nourmoharram/Embedded_Linux_ITI/CMake/Calculator/build/CMakeFiles/calculator.dir
+/home/nourmoharram/Embedded_Linux_ITI/CMake/Calculator/build/CMakeFiles/Math.dir
+/home/nourmoharram/Embedded_Linux_ITI/CMake/Calculator/build/CMakeFiles/edit_cache.dir
+/home/nourmoharram/Embedded_Linux_ITI/CMake/Calculator/build/CMakeFiles/rebuild_cache.dir

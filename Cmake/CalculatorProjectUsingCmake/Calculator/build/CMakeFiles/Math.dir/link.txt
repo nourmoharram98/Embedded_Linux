@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMath.a CMakeFiles/Math.dir/add.c.o CMakeFiles/Math.dir/mult.c.o CMakeFiles/Math.dir/division.c.o CMakeFiles/Math.dir/sub.c.o
+/usr/bin/ranlib libMath.a

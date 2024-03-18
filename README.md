@@ -6,4 +6,4 @@
 
 
 
-> ## This Repository contain Tasks and practices related to Admin Linux and Embedded Linux concepts  
+> ## This Repository contain Tasks and practices related to Admin Linux and Embedded Linux concepts and YOCTO 

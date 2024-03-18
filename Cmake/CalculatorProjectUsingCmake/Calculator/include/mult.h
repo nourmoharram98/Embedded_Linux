@@ -1,0 +1,1 @@
+int mult_numbers(int x, int y);
