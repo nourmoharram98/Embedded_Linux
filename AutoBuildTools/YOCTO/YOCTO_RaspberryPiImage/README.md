@@ -1,4 +1,4 @@
-# Custom Raspberry Pi Image using Yocto Project
+# Custom Raspberry Pi Image using YOCTO Project
 
 ## Overview
 
